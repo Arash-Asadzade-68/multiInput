@@ -1,6 +1,6 @@
 {
   "name": "multi-inputs",
-  "homepage": "https://Arash-Asadzade-68.github.io/multiInput",
+  "homepage": "https://Arash-Asadzadeh-68.github.io/multiInput/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "deploy1": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "keywords": [],
   "author": "",
@@ -44,6 +45,7 @@
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-define": "^2.0.0",
     "ts-loader": "^6.1.2",
     "typescript": "^3.6.3"
   }

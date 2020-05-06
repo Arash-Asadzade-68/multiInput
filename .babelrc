@@ -2,7 +2,8 @@
   "presets": ["next/babel"],
   "plugins": [
     "inline-dotenv",
-    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "transform-define"
   ],
   "env": {
     "test": {
