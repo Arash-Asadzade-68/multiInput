@@ -3,6 +3,7 @@ const path = require("path");
 module.exports = withSass(
   {
     cssModules: true,
+    distDir: 'build',
     cssLoaderOptions: {
       importLoaders: 1,
       localIdentName: "[local]___[hash:base64:5]"
