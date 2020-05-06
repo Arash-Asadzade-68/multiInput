@@ -9,7 +9,7 @@ const Index = () => {
     const results =()=>{
     if (typeof window !== 'undefined') {
     const results = JSON.parse(localStorage.getItem('results'))
-     if(results.length > 0)
+     if(results)
      return results
     }
     return[{
