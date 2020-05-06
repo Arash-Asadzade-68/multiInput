@@ -1,0 +1,24 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "inline-dotenv",
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "next/babel",
+          {
+            "preset-env": {
+              "modules": "commonjs"
+            }
+          }
+        ]
+      ]
+    },
+    "development" : {
+      "compact": false
+    }
+  }
+}

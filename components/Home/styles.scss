@@ -1,0 +1,60 @@
+
+.container {
+    box-shadow: 1px 1px 1px rgba($color: #ccc, $alpha: 1.0);
+    .cardHeader{
+        padding: 12px;
+    }
+    .cardBody{
+        padding: 12px;
+        .groupField{
+            display: flex;
+            justify-content: space-between;
+            > div{
+                &:active{
+                    outline: unset;
+                }
+                &:focus{
+                   outline: unset;
+               }
+               border: none !important;
+            }
+           
+            .deleteBtn{
+                padding: 10px;
+                font-size: 25px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .cardFooter{
+        height: 60px;
+        background-color: lightskyblue;
+        > button {
+            float: right;
+            margin: 12px;
+            width: 80px;
+            height: 30px;
+            border: unset;
+            border-radius: 4px;
+            background-color: unset;
+            color: #3f51b5;
+            font-size: 18px;
+            cursor: pointer;
+            &:active{
+                background-color: #0d47a1;
+                color: white;
+            }
+        }
+
+    }
+}
+
+
+
+
+
