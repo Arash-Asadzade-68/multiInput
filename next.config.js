@@ -1,18 +1,11 @@
 const withSass = require("@zeit/next-sass");
 const path = require("path");
-const debug = process.env.NODE_ENV !== "production";
 
-console.log('isProd', debug)
+
 module.exports = withSass(
   {
     cssModules: true,
     distDir: 'build',
-    exportPathMap: function () {
-      return {
-        "/": { page: "/" }
-      }
-    },
-    assetPrefix: !debug ? 'https://Arash-Asadzadeh-68.github.io/multiInput/' : '',
     cssLoaderOptions: {
       importLoaders: 1,
       localIdentName: "[local]___[hash:base64:5]"
